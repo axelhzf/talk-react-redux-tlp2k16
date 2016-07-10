@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <title>React at Treexor</title>
+  <title>React + Redux - A better way to build javascript apps</title>
+
   <link rel="stylesheet" type="text/css" href="theme/style.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -12,13 +13,329 @@
     <div class="slides">
         <section class="slide  cover">
     <p><img src="images/react-redux-logo.png" alt=""></p>
-<h1 id="react-redux-2">REACT + REDUX 2</h1>
+<h1 id="react-redux">REACT + REDUX</h1>
 <h2 id="a-better-way-to-build-javascript-apps">A BETTER WAY TO BUILD JAVASCRIPT APPS</h2>
 
   </section>
   <section class="slide hidden">
-    <p>#</p>
-<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <h2 id="the-best-way-to-learn-a-new-technology-is-building-something">The best way to learn a new technology is building something</h2>
+<p><a href="http://axelhzf.com/gifux">http://axelhzf.com/gifux</a></p>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="react">React</h2>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="react-is-a-library-to-build-user-interfaces">React is a library to build user interfaces</h2>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="react-is-all-about-modular-and-composable-components">React is all about modular and composable components</h2>
+
+  </section>
+  <section class="slide hidden">
+    <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">"react"</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">"react-dom"</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloWorld</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    )</span>;
+  }
+}
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">HelloWorld</span> /&gt;</span>, document.getElementById('container'));</span></code></pre>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="is-this-html-inside-js-">Is this html inside JS?</h2>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="it-s-jsx-">It&#39;s JSX.</h2>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="jsx-is-compiled-to-something-like">JSX is compiled to something like</h2>
+<pre><code class="lang-js">React.createElement(<span class="hljs-string">"div"</span>,<span class="hljs-literal">null</span>,
+  React.createElement(<span class="hljs-string">"h1"</span>,<span class="hljs-literal">null</span>,<span class="hljs-string">"Hello World"</span>)
+);</code></pre>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="but-where-is-the-separation-of-concerns-">But, where is the separation of concerns?</h2>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="react-rethinking-best-practices">React: rethinking best practices</h2>
+<p><a href="https://www.youtube.com/watch?v=x7cQ3mrcKaY">https://www.youtube.com/watch?v=x7cQ3mrcKaY</a></p>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="templates-encourages-a-poor-separation-of-concerns-">Templates encourages a poor separation of concerns.</h2>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="templates-separates-technologies-not-concerns-">Templates separates technologies, not concerns.</h2>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="jsx-benefits">JSX benefits</h2>
+<ul>
+<li>Fails at compile time</li>
+<li>Line number provided</li>
+<li>Debuggable</li>
+</ul>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="angular-2-continues-to-put-js-into-html-react-puts-html-into-js-">Angular 2 continues to put “JS” into HTML. React puts “HTML” into JS.</h2>
+
+  </section>
+  <section class="slide hidden">
+    <h3 id="to-read-angular-learn-a-long-list-of-angular-specific-syntax-">To read Angular: Learn a long list of Angular-specific syntax.</h3>
+<h3 id="to-read-react-learn-javascript-">To read React: Learn JavaScript.</h3>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="render-a-list-in-angular-2">Render a list in Angular 2</h2>
+<pre><code class="lang-js">&lt;ul&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> *<span class="hljs-attr">ngFor</span>=<span class="hljs-string">"#hero of heroes"</span>&gt;</span>
+    {{hero.name}}
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span></code></pre>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="render-a-list-in-react">Render a list in React</h2>
+<pre><code class="lang-js">&lt;ul&gt;
+  { heroes.map(hero =&gt; <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{hero.id}</span>&gt;</span>{hero.name}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>)</span> }
+&lt;<span class="hljs-regexp">/ul&gt;</span></code></pre>
+
+  </section>
+  <section class="slide hidden">
+    <h1 id="props">Props</h1>
+<p>Data passed in from a parent component is available as a &#39;property&#39; on the child component. These &#39;properties&#39; are accessed through <code>this.props</code>.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Hello</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">const</span> {name} = <span class="hljs-keyword">this</span>.props;
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello {name}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>;</span>
+  }
+}</code></pre>
+<pre><code class="lang-js">&lt;HelloWorld name=<span class="hljs-string">"Treexor"</span>/&gt;;</code></pre>
+
+  </section>
+  <section class="slide hidden">
+    <h1 id="state">State</h1>
+<p>Components can have it&#39;s own private mutable state <code>this.state</code>. The state can be changed by calling <code>this.setState()</code>.</p>
+
+  </section>
+  <section class="slide hidden">
+    <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">"react"</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloWorld</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  state = { counter: <span class="hljs-number">0</span>};
+  increment = () =&gt; <span class="hljs-keyword">this</span>.setState({counter: <span class="hljs-keyword">this</span>.state.counter + <span class="hljs-number">1</span>})
+  render() {
+    <span class="hljs-keyword">const</span> {counter} = <span class="hljs-keyword">this</span>.state;
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Counter {counter}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.increment}</span>&gt;</span>Increment<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    )</span>;
+  }
+}</code></pre>
+
+  </section>
+  <section class="slide hidden">
+    <h1 id="redux">Redux</h1>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="redux-is-a-predictable-state-container-for-javascript-apps-">Redux is a predictable state container for JavaScript apps.</h2>
+
+  </section>
+  <section class="slide hidden">
+    <p><img src="http://s2.quickmeme.com/img/d9/d9f01f01d19cd39d7bd57e5b9570210758d545eb7583477689d29f113276c7b1.jpg" alt=""></p>
+
+  </section>
+  <section class="slide hidden">
+    <h1 id="state">State</h1>
+<ul>
+<li>Applications needs to store complex state</li>
+<li>State from server responses</li>
+<li>State from UI (selected tab, spinners, pagination)</li>
+<li>Share state between independent components</li>
+</ul>
+
+  </section>
+  <section class="slide hidden">
+    <h1 id="mvc">MVC</h1>
+<p><img src="http://axelhzf.com/talk-new-ideas-web-app/2fd134f491b9a8c56a4fddf422ea8237.svg" alt=""></p>
+
+  </section>
+  <section class="slide hidden">
+    <h1 id="real-world-mvc">Real world MVC</h1>
+<p><img src="http://axelhzf.com/talk-new-ideas-web-app/68132677d59dfe921c41d6f34afb2091.svg" alt=""></p>
+
+  </section>
+  <section class="slide hidden">
+    <blockquote>
+<p>When a system is opaque and non-deterministic, it’s hard to reproduce bugs or add new features.</p>
+</blockquote>
+
+  </section>
+  <section class="slide hidden">
+    <blockquote>
+<p>Mutation and asynchronicity create a mess. We need to find a way to make our state more predictable.</p>
+</blockquote>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="introducing-redux">Introducing Redux</h2>
+<p><a href="https://www.youtube.com/watch?v=xsSnOQynTHs">https://www.youtube.com/watch?v=xsSnOQynTHs</a></p>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="redux">Redux</h2>
+<ul>
+<li>Inspired on flux and elm</li>
+<li>Minimal api</li>
+<li>Completely predictable behaviour</li>
+<li>Not react specific, it&#39;s just an event and state management library</li>
+</ul>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="redux-principles">Redux Principles</h2>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="single-source-of-truth">SINGLE SOURCE OF TRUTH</h2>
+<ul>
+<li>The state of the whole application is stored in an object tree within a single store</li>
+<li>Easy to share information across components</li>
+<li>Easy to debug</li>
+<li>We can easily save and restore the state of the whole application</li>
+<li>Undo/redo, hot reloading, trace production error</li>
+</ul>
+
+  </section>
+  <section class="slide hidden">
+    <pre><code class="lang-js"><span class="hljs-keyword">var</span> state = {
+  visibilityFilter: <span class="hljs-string">'SHOW_ALL'</span>,
+  todos: [
+    { text: <span class="hljs-string">'Consider using Redux'</span>, completed: <span class="hljs-literal">true</span>},
+    { text: <span class="hljs-string">'Keep all state in a single tree'</span>, completed: <span class="hljs-literal">false</span>}
+  ]
+};</code></pre>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="state-is-read-only">State is read-only</h2>
+<ul>
+<li>The only way to mutate the state is to emit and action, an object describing what happened.</li>
+<li>Views or http callbacks don&#39;t modify the state, instead they express the intention to mutate the state.</li>
+<li>Actions can be logged for debugging or stored for testing purposes</li>
+</ul>
+
+  </section>
+  <section class="slide hidden">
+    <pre><code class="lang-js">store.dispatch({
+  type: <span class="hljs-string">'COMPLETE_TODO'</span>,
+  index: <span class="hljs-number">1</span>
+});
+
+store.dispatch({
+  type: <span class="hljs-string">'SET_VISIBILITY_FILTER'</span>,
+  filter: <span class="hljs-string">'SHOW_COMPLETED'</span>
+});</code></pre>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="changes-are-made-with-pure-functions">Changes are made with pure functions</h2>
+<ul>
+<li>These pure functions are called reducers</li>
+</ul>
+<pre><code class="lang-js">(previousState, action) =&gt; newState</code></pre>
+
+  </section>
+  <section class="slide hidden">
+    <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reducer</span>(<span class="hljs-params">state, action</span>) </span>{
+  <span class="hljs-keyword">switch</span> (action.type) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'SET_VISIBILITY_FILTER'</span>:
+      <span class="hljs-keyword">var</span> newState = _.clone(state);
+      newState.filter = action.filter;
+      <span class="hljs-keyword">return</span> newState;
+
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'SET_COMPLETE_TODO'</span>:
+      <span class="hljs-keyword">var</span> newState = _.clone(state);
+      newState.todos[action.index].completed = <span class="hljs-literal">true</span>;
+      <span class="hljs-keyword">return</span> newState;
+
+    <span class="hljs-keyword">default</span>:
+      <span class="hljs-keyword">return</span> state
+  }
+}</code></pre>
+
+  </section>
+  <section class="slide hidden">
+    <p><img src="http://axelhzf.com/talk-new-ideas-web-app/629f6ef5231273ca1f2114b0ea2cf1d1.svg" alt=""></p>
+
+  </section>
+  <section class="slide hidden">
+    
+  </section>
+  <section class="slide hidden">
+    <h1 id="optimizing-our-application">Optimizing our application</h1>
+
+  </section>
+  <section class="slide hidden">
+    <h1 id="how-react-works-">How React works?</h1>
+<ul>
+<li>Every time props or state change the render method is called.</li>
+<li><code>render</code> creates a <code>virtual dom</code> representation of our view.</li>
+<li>Rect compute the diff between the new and the old tree.</li>
+<li>Creates a batch of DOM updates</li>
+</ul>
+
+  </section>
+  <section class="slide hidden">
+    <p><img src="http://axelhzf.com/talk-new-ideas-web-app/c980e98d9fb1e693e7198eb4b641e462.svg" alt=""></p>
+<pre><code class="lang-js">f(Do) = Vo</code></pre>
+
+  </section>
+  <section class="slide hidden">
+    <p><img src="http://axelhzf.com/talk-new-ideas-web-app/0ad9b87a0281ef269223fcdb17fd09a9.svg" alt=""></p>
+<pre><code class="lang-js">f(D1) = V1
+diff(V0, V1) = CHANGES</code></pre>
+
+  </section>
+  <section class="slide hidden">
+    <h2 id="om">Om</h2>
+<ul>
+<li>ClojureScript interface to Facebook&#39;s React</li>
+<li>Om has better performance out of the box than React.</li>
+<li>Because ClojureScript data is immutable data, React&#39;s reconciliation process has to do less work.</li>
+</ul>
+
+  </section>
+  <section class="slide hidden">
+    <p>Persistent data structures</p>
+<p><a href="https://www.youtube.com/watch?v=mS264h8KGwk&amp;app=desktop">https://www.youtube.com/watch?v=mS264h8KGwk&amp;app=desktop</a>
+<a href="https://www.youtube.com/watch?v=I7IdS-PbEgI">https://www.youtube.com/watch?v=I7IdS-PbEgI</a></p>
+
+  </section>
+  <section class="slide hidden">
+    
+  </section>
+  <section class="slide hidden">
+    <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-31904298-1']);

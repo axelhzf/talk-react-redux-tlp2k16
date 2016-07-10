@@ -1,6 +1,5 @@
 body {
-    background-image: url(./images/bg.jpg);
-    background-size: cover;
+    background: radial-gradient(circle at 1.99% 1.98%, #5C258D, transparent 100%), radial-gradient(circle at 98.01% 58.99%, #4389A2, transparent 100%), radial-gradient(circle at 50% 50%, #ffffff, #ffffff 100%);
 }
 
 .reveal section.cover img {
@@ -8,4 +7,16 @@ body {
     background: none;
     max-width: 300px;
     box-shadow: none;
+}
+
+::selection {
+    color: white;
+    background: #5C258D;
+    text-shadow: none;
+}
+
+.reveal a:not(.image) {
+    color: #fff;
+    text-decoration: underline;
+    transition: none;
 }
