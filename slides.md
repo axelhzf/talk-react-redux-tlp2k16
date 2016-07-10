@@ -10,13 +10,13 @@ theme: ./theme
 
 ![](images/react-redux-logo.png)
 
-# REACT + REDUX
+## REACT + REDUX
 
 ## A BETTER WAY TO BUILD JAVASCRIPT APPS
 
 --
 
-## The best way to learn a new technology is building something
+## The best way to learn a new technology is to build something
 
 http://axelhzf.com/gifux
 
@@ -53,7 +53,7 @@ ReactDOM.render(<HelloWorld />, document.getElementById('container'));
 
 --
 
-## Is this html inside JS?
+## HTML inside a JavaScript?
 
 --
 
@@ -130,7 +130,7 @@ https://www.youtube.com/watch?v=x7cQ3mrcKaY
 --
 
 
-# Props
+## Props
 
 Data passed in from a parent component is available as a 'property' on the child component. These 'properties' are accessed through `this.props`.
 
@@ -149,7 +149,7 @@ export default class Hello extends React.Component {
 
 --
 
-# State
+## State
 
 Components can have it's own private mutable state `this.state`. The state can be changed by calling `this.setState()`.
 
@@ -175,7 +175,7 @@ export default class HelloWorld extends React.Component {
 
 --
 
-# Redux
+## Redux
 
 --
 
@@ -187,7 +187,7 @@ export default class HelloWorld extends React.Component {
 
 --
 
-# State
+## State
 
 * Applications needs to store complex state
 * State from server responses
@@ -196,13 +196,13 @@ export default class HelloWorld extends React.Component {
 
 --
 
-# MVC
+## MVC
 
 ![](http://axelhzf.com/talk-new-ideas-web-app/2fd134f491b9a8c56a4fddf422ea8237.svg)
 
 --
 
-# Real world MVC
+## Real world MVC
 
 ![](http://axelhzf.com/talk-new-ideas-web-app/68132677d59dfe921c41d6f34afb2091.svg)
 
@@ -226,7 +226,7 @@ https://www.youtube.com/watch?v=xsSnOQynTHs
 * Inspired on flux and elm
 * Minimal api
 * Completely predictable behaviour
-* Not react specific, it's just an event and state management library
+* Not React specific, it's just an event and state management library
 
 --
 
@@ -313,7 +313,7 @@ function reducer(state, action) {
 
 --
 
-# Gifux
+## Gifux
 
 --
 
@@ -340,6 +340,8 @@ npm start
 ![](images/app-components.jpg)
 
 --
+
+## Components tree
 
 ![](images/components-tree.png)
 
@@ -421,7 +423,7 @@ git checkout -f 2e67c96
 https://github.com/axelhzf/talk-react-redux-tlp2k16-code/commit/84388df6a9fbf2ab3e360ea4436a2ebf4374a2e9
 
 ```cmd
-git chekcout -f 84388df
+git checkout -f 84388df
 ```
 
 --

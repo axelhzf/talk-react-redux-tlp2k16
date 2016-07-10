@@ -19,4 +19,18 @@ body {
     color: #fff;
     text-decoration: underline;
     transition: none;
+    padding: 5px;
+}
+
+.reveal a:not(.image):hover {
+    background-color: #5C258D;
+    color: #fff;
+}
+
+.reveal pre {
+    width: 100%;
+}
+
+.reveal .progress span {
+    background: #5C258D;
 }
