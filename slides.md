@@ -313,57 +313,168 @@ function reducer(state, action) {
 
 --
 
---
-
-
-# Optimizing our application
+# Gifux
 
 --
 
-# How React works?
-
-* Every time props or state change the render method is called.
-* `render` creates a `virtual dom` representation of our view.
-* Rect compute the diff between the new and the old tree.
-* Creates a batch of DOM updates
-
---
-
-![](http://axelhzf.com/talk-new-ideas-web-app/c980e98d9fb1e693e7198eb4b641e462.svg)
+## Clone the repo
 
 ```js
-f(Do) = Vo
+git clone https://github.com/axelhzf/talk-react-redux-tlp2k16-code.git
+git checkout -f 82f8b37
 ```
 
 --
 
-![](http://axelhzf.com/talk-new-ideas-web-app/0ad9b87a0281ef269223fcdb17fd09a9.svg)
+## Run the application
 
-```js
-f(D1) = V1
-diff(V0, V1) = CHANGES
+```cmd
+npm install
+npm start
 ```
 
 --
 
-## Om
+## Analyzing the application
 
-* ClojureScript interface to Facebook's React
-* Om has better performance out of the box than React.
-* Because ClojureScript data is immutable data, React's reconciliation process has to do less work.
+![](images/app-components.jpg)
 
 --
 
-Persistent data structures
+![](images/components-tree.png)
 
-https://www.youtube.com/watch?v=mS264h8KGwk&app=desktop
+--
+
+## Components vs Containers
+
+https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.ph7md8nhg
+
+--
+
+## Components communication
+
+![](images/components-communication.png)
+
+--
+
+## React + Redux integration using [react-redux](https://github.com/reactjs/react-redux)
+
+https://github.com/axelhzf/talk-react-redux-tlp2k16-code/commit/4ed504bfcbe93d612d50e43c4c1be83a2ae2f2f4
+
+```cmd
+git checkout -f 4ed504b
+```
+
+--
+
+## Connect is a High Order Component
+
+https://gist.github.com/sebmarkbage/ef0bf1f338a7182b6775
+
+https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750
+
+--
+
+## Immutable options
+
+* [_.cloneDeep](https://lodash.com/docs#cloneDeep)
+* [immutability-helper](https://www.npmjs.com/package/immutability-helper)
+* [Immutable.js](https://facebook.github.io/immutable-js/)
+
+--
+
+## PERSISTENT IMMUTABLE DATA STRUCTURES
+
+https://www.youtube.com/watch?v=mS264h8KGwk
 https://www.youtube.com/watch?v=I7IdS-PbEgI
 
 --
 
+## Structural sharing
 
+![](http://axelhzf.com/talk-new-ideas-web-app/14500f60eb2d693012eab58f4e5bde8b.svg)
 
+--
 
+## Immutability helper integration
+
+https://github.com/axelhzf/talk-react-redux-tlp2k16-code/commit/872f4cea930a7723c87b432bc0159cde06c5777f
+
+```cmd
+git checkout -f 872f4ce
+```
+
+--
+
+## Fetch data from an API
+
+https://github.com/axelhzf/talk-react-redux-tlp2k16-code/commit/2e67c96b04d21e2d915980e9a14edf08a4374de5
+
+```cmd
+git checkout -f 2e67c96
+```
+
+--
+
+## Fetch favorites
+
+https://github.com/axelhzf/talk-react-redux-tlp2k16-code/commit/84388df6a9fbf2ab3e360ea4436a2ebf4374a2e9
+
+```cmd
+git chekcout -f 84388df
+```
+
+--
+
+## Toggle favorites
+
+https://github.com/axelhzf/talk-react-redux-tlp2k16-code/commit/b37d36025fb007ad839197ca9c371f1331ab0722
+
+```cmd
+git checkout -f b37d360
+```
+
+--
+
+## Caching
+
+https://github.com/axelhzf/talk-react-redux-tlp2k16-code/commit/5239ba24ce90f50c997594134567b02763de4296
+
+```cmd
+git checkout -f 5239ba2
+```
+
+* You can also use [normalizr](https://github.com/paularmstrong/normalizr)
+
+--
+
+## Show notifications
+
+https://github.com/axelhzf/talk-react-redux-tlp2k16-code/commit/7c085a6e5bd7329dce221a443c69e8e0fd477011
+
+```cmd
+git checkout -f 7c085a6
+```
+
+--
+
+## Local Storage
+
+https://github.com/axelhzf/talk-react-redux-tlp2k16-code/commit/986008ec556519a75940204e6102336b4b03c804
+
+```cmd
+git checkout -f 986008e
+```
+
+--
+
+## Undo
+
+https://github.com/axelhzf/talk-react-redux-tlp2k16-code/commit/11d78507aa7a391eebfb32265f1bcd02fa6cc71a
+
+```cmd
+git checkout -f 11d7850
+```
 
 --
 
