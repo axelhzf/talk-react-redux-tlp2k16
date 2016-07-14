@@ -14,11 +14,39 @@ theme: ./theme
 
 ## A BETTER WAY TO BUILD JAVASCRIPT APPS
 
+-- twitter
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="es" dir="ltr">El ganador del <a href="https://twitter.com/hashtag/TreexorChallenge?src=hash">#TreexorChallenge</a> se llevará una suscripción de 6 meses en <a href="https://twitter.com/eggheadio">@eggheadio</a>. Superarás la prueba? <a href="https://t.co/dzpb7rR2WH">pic.twitter.com/dzpb7rR2WH</a></p>&mdash; Treexor (@treexor) <a href="https://twitter.com/treexor/status/753568426560454656">July 14, 2016</a></blockquote>
+
+--
+
+![](https://betabeers2.s3.amazonaws.com/uploads/community/logo/278.png)
+
 --
 
 ## The best way to learn a new technology is to build something
 
 http://axelhzf.com/gifux
+
+--
+
+## JavaScript Fatigue
+
+https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4
+
+-- twitter
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/dan_abramov">@dan_abramov</a> <a href="https://twitter.com/floydophone">@floydophone</a> this is killing me that setting up a js project is so damn hard. Took me an entire evening last time</p>&mdash; Vjeux (@Vjeux) <a href="https://twitter.com/Vjeux/status/680236138171244544">December 25, 2015</a></blockquote>
+
+--
+
+## JavaScript Fatigue Fatigue
+
+http://www.2ality.com/2016/02/js-fatigue-fatigue.html
+
+-- twitter
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Welcome back <a href="https://twitter.com/tjholowaychuk">@tjholowaychuk</a> <a href="https://t.co/TSlIY37wW4">https://t.co/TSlIY37wW4</a></p>&mdash; Dan Abramov (@dan_abramov) <a href="https://twitter.com/dan_abramov/status/682368983547416577">December 31, 2015</a></blockquote>
 
 --
 
@@ -55,13 +83,21 @@ ReactDOM.render(<HelloWorld />, document.getElementById('container'));
 
 ## HTML inside a JavaScript?
 
+![](http://media0.giphy.com/media/kaq6GnxDlJaBq/200.gif)
+
+--
+
+## Didn't we escape PHP years ago?
+
+![](https://media2.giphy.com/media/BoSjXTXj1ahBC/200.gif)
+
 --
 
 ## It's JSX.
 
 --
 
-## JSX is compiled to something like
+## JSX compiles to
 
 ```js
 React.createElement("div",null,
@@ -94,6 +130,10 @@ https://www.youtube.com/watch?v=x7cQ3mrcKaY
 * Fails at compile time
 * Line number provided
 * Debuggable
+
+--
+
+![](https://cdn-images-1.medium.com/max/800/1*MRPl_SNuRGJchb6eOAnkSA.jpeg)
 
 --
 
@@ -313,6 +353,13 @@ function reducer(state, action) {
 
 --
 
+## Redux lessons by Dan Abramov
+
+https://egghead.io/courses/getting-started-with-redux
+https://egghead.io/courses/building-react-applications-with-idiomatic-redux
+
+--
+
 ## Gifux
 
 --
@@ -477,8 +524,6 @@ https://github.com/axelhzf/talk-react-redux-tlp2k16-code/commit/11d78507aa7a391e
 ```cmd
 git checkout -f 11d7850
 ```
-
---
 
 <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script type="text/javascript">

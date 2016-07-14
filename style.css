@@ -34,3 +34,8 @@ body {
 .reveal .progress span {
     background: #5C258D;
 }
+
+.twitter {
+    display: flex !important;
+    justify-content: center;
+}
