@@ -44,6 +44,12 @@ https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4
 
 http://www.2ality.com/2016/02/js-fatigue-fatigue.html
 
+--
+
+* Don’t try to know everything
+* Do exploratory toy projects
+* Wait for the critical mass
+
 -- twitter
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Welcome back <a href="https://twitter.com/tjholowaychuk">@tjholowaychuk</a> <a href="https://t.co/TSlIY37wW4">https://t.co/TSlIY37wW4</a></p>&mdash; Dan Abramov (@dan_abramov) <a href="https://twitter.com/dan_abramov/status/682368983547416577">December 31, 2015</a></blockquote>
@@ -159,6 +165,10 @@ https://www.youtube.com/watch?v=x7cQ3mrcKaY
 
 --
 
+![](https://media3.giphy.com/media/JwVWLRnZkh2M0/200.gif)
+
+--
+
 ## Render a list in React
 
 ```js
@@ -169,6 +179,9 @@ https://www.youtube.com/watch?v=x7cQ3mrcKaY
 
 --
 
+![](http://media0.giphy.com/media/zcCGBRQshGdt6/200.gif)
+
+--
 
 ## Props
 
